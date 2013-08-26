@@ -14,7 +14,7 @@ Download latest version of Vagrant and install.
 ### Install Vagrant Plugins
 Vagrant plugins increase the functionality of vagrant. They are installed by calling `vagrant plugin install PLUGINNAME`
 
-The plugins to install are: vagrant-hostmanager
+The plugins to install are: vagrant-hostmanager, vagrant-librarian-chef
 
 ### Clone the Repo
 1. `git clone https://github.com/risdenk/ambari-vagrant.git`
