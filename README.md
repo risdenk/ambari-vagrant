@@ -38,9 +38,9 @@ Modified from the Testing Ambari section of https://cwiki.apache.org/confluence/
 7. `ambari-server start`
 
 ### Install the Cluster
-1. Navigate to `http://c6401.ambari.apache.org:8080`
+1. Navigate to `http://c6401.vagrant:8080`
 2. Login with username __admin__ and password __admin__
-3. For the target host use the FQDN `c6401.ambari.apache.org`
+3. For the target host use the FQDN `c6401.vagrant`
 4. Upload the __insecure\_private\_key__ from `~/.vagrant.d/insecure_private_key`
 5. Specify __vagrant__ as the non-root SSH user
 6. Follow the remaining steps
