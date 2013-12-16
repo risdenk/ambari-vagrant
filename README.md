@@ -44,3 +44,14 @@ Modified from the Testing Ambari section of https://cwiki.apache.org/confluence/
 4. Upload the __insecure\_private\_key__ from `~/.vagrant.d/insecure_private_key`
 5. Specify __vagrant__ as the non-root SSH user
 6. Follow the remaining steps
+
+### Server Restart Steps
+If you find the server is failing or you are receiving a lot of Nagios emails about warnings and critical errors (if you have opted into the emails), restart the server with these steps.
+
+1. ssh into the server with `vagrant ssh c6401`.
+2. Reboot the server with `sudo reboot`. This will kick you off ssh.
+3. Wait for machine reboot. You can watch status on VirtualBox or ping the box with `ping c6401.vagrant` or ping the ip found from `cat /etc/hosts`.
+4. Once it's back up, ssh again with `vagrant ssh c6401`.
+5. Run `sudo ambari-server start` to get Ambari started again.
+6. Run `sudo service ambari-agent start` to start the Ambari agent.
+6. Navigate to `http://c6401.vagrant:8080` as normal.
