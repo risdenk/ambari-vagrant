@@ -4,9 +4,13 @@
   "json_class": "Chef::Role",
   "description": "This is the base role",
   "default_attributes": {
+    "selinux": {
+      "state": "disabled"
+    }
   },
   "run_list": [
-    "recipe[selinux::disabled]",
+    "recipe[selinux]",
+    "recipe[iptables::disabled]",
     "recipe[ntp]"
   ]
 }
