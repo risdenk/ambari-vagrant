@@ -53,5 +53,5 @@ If you find the server is failing or you are receiving a lot of Nagios emails ab
 3. Wait for machine reboot. You can watch status on VirtualBox or ping the box with `ping c6401.vagrant` or ping the ip found from `cat /etc/hosts`.
 4. Once it's back up, ssh again with `vagrant ssh c6401`.
 5. Run `sudo ambari-server start` to get Ambari started again.
-6. Run `sudo ambari-agent start` to start the Ambari agent.
+6. Run `sudo service ambari-agent start` to start the Ambari agent.
 6. Navigate to `http://c6401.vagrant:8080` as normal.
